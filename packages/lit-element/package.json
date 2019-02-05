@@ -1,0 +1,28 @@
+{
+  "name": "lit-element-counter",
+  "version": "0.0.1",
+  "description": "LitElement web component example",
+  "main": "x-counter.js",
+  "scripts": {
+		"build": "rollup -c",
+		"checksize": "rollup -c ; cat x-counter.bundled.js | gzip -9 | wc -c ; rm x-counter.bundled.js",
+    "start": "polyserve ."
+  },
+  "keywords": [
+    "web components",
+    "vanillajs"
+  ],
+  "author": "Jorge del Casar",
+	"license": "MIT",
+	"dependencies": {
+		"lit-element": "^2.0.0-rc.5"
+	},
+  "devDependencies": {
+		"rollup": "^1.1.2",
+		"rollup-plugin-filesize": "^6.0.1",
+		"rollup-plugin-terser": "^4.0.4",
+		"rollup-plugin-node-resolve": "^4.0.0",
+    "polyserve": "^0.27.15",
+		"test-counter": "^0.0.1"
+  }
+}
