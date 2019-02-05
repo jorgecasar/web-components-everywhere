@@ -1,0 +1,25 @@
+{
+  "name": "vanillajs-counter",
+  "version": "0.0.1",
+  "description": "Vanillajs web component example",
+  "main": "x-counter.js",
+  "scripts": {
+		"build": "rollup -c",
+		"checksize": "rollup -c ; cat x-counter.bundled.js | gzip -9 | wc -c ; rm x-counter.bundled.js",
+    "start": "serve ."
+  },
+  "keywords": [
+    "web components",
+    "vanillajs"
+  ],
+  "author": "Jorge del Casar",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.1.2",
+		"rollup-plugin-filesize": "^6.0.1",
+		"rollup-plugin-terser": "^4.0.4",
+		"rollup-plugin-node-resolve": "^4.0.0",
+    "serve": "^10.1.1",
+		"test-counter": "^0.0.1"
+  }
+}
